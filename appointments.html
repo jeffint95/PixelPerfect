@@ -22,7 +22,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="../website/img/Logo.png" alt="PixelPerfect Logo" width="30" height="30" class="d-inline-block align-top">
+        <img src="../website/img/Logo.png" alt="PixelPerfect Logo" width="30" height="30"
+          class="d-inline-block align-top">
         PixelPerfect
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -33,54 +34,60 @@
       <div class=" collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto ">
           <li class="nav-item">
-            <a class="nav-link mx-2 active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link mx-2" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-2" href="projects.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="appointments.html">Appointment</a>
+            <a class="nav-link mx-2 active" href="appointments.html">Appointment</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Company
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">About Us</a></li>
-              <li><a class="dropdown-item" href="#">Contact us</a></li>
-            </ul>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="#">Contact us</a></li>
+          </ul>
           </li>
+
         </ul>
       </div>
     </div>
   </nav>
 
   <main>
+    <p class="appointment-message">Feel free to reach out and share your thoughts, requirements, and any specific details you have in mind. Our
+      dedicated team is ready to collaborate with you, ensuring that every aspect of your website reflects your brand
+      identity and captivates your target audience.</p>
+
     <div id="appointment-form" class="container">
-        <h2>Schedule Appointment</h2>
-        <form id="scheduleForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+      <h2>Schedule Appointment</h2>
+      <form id="scheduleForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
 
-            <label for="time">Time:</label>
-            <input type="time" id="time" name="time" required>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
 
-            <button type="button" onclick="scheduleAppointment()">Schedule</button>
-        </form>
+        <label for="description">Message:</label>
+        <input type="text" id="text" type="text" required>
+        <ul></ul>
+        <button type="button" onclick="scheduleAppointment()">Schedule</button>
+      </form>
     </div>
+
   </main>
 
   <footer>
     <div class="footer-content">
       <a href="index.html" style="text-decoration: none; color: white;">
-        <img src="../website/img/Logo.png" alt="PixelPerfect Logo" width="25" height="25" class="d-inline-block align-top">
+        <img src="../website/img/Logo.png" alt="PixelPerfect Logo" width="25" height="25"
+          class="d-inline-block align-top">
         PixelPerfect</a>
 
       <div class="social-icons">
